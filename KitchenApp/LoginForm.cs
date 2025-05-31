@@ -53,7 +53,7 @@ namespace KitchenApp
         }
         private void ShowStuffLogin()
         {
-            ClearControls(); // Очищаем панель
+            ClearControls(); 
 
             usernameTextBox = new TextBox { Width = 200, PlaceholderText = "username" };
             passwordTextBox = new TextBox { Width = 200, UseSystemPasswordChar = true, PlaceholderText = "Пароль" };
@@ -63,7 +63,6 @@ namespace KitchenApp
 
             staffLoginButton.Click += StaffLoginButton_Click;
 
-            // Добавляем элементы в панель
             loginPanel.Controls.Add(usernameTextBox);
             loginPanel.Controls.Add(passwordTextBox);
             loginPanel.Controls.Add(staffLoginButton);
@@ -76,7 +75,6 @@ namespace KitchenApp
             staffRegisterLink.Location = new Point(543, 150);
             staffForgotPassword.Location = new Point(530, 190);
 
-            // Делаем панель видимой
             loginPanel.Visible = true;
         }
 
@@ -86,12 +84,12 @@ namespace KitchenApp
         }
         private void ClientLoginButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Client Login Clicked!"); // Replace with your login logic
+            MessageBox.Show("Client Login Clicked!"); 
         }
 
         private void StaffLoginButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Staff Login Clicked!"); // Replace with your login logic
+            MessageBox.Show("Staff Login Clicked!"); 
         }
     }
 }
